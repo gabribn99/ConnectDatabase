@@ -15,21 +15,19 @@ import javax.swing.table.DefaultTableModel;
 public class Consultas extends javax.swing.JFrame {
 
     private final MngDb database;
-    private final JFrame main, conectar;
+    private final JFrame conectar;
     private DefaultTableModel modelo;
 
     /**
      * Creates new form Consultas
      *
-     * @param main
      * @param database
      * @param conectar
      */
-    public Consultas(JFrame main, MngDb database, JFrame conectar) {
+    public Consultas(MngDb database, JFrame conectar) {
         super("Mostrar Animales");
         initComponents();
         this.database = database;
-        this.main = main;
         this.conectar = conectar;
         setLocationRelativeTo(null);
     }

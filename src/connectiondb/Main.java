@@ -19,8 +19,8 @@ public class Main extends javax.swing.JFrame {
         managedb = new MngDb();
         initComponents();
         setLocationRelativeTo(null);
-        conectar = new Conectar(this, managedb);
-        consultas = new Consultas(this, managedb, conectar);
+        conectar = new Conectar(managedb);
+        consultas = new Consultas(managedb, conectar);
     }
 
     /**
